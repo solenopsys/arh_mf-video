@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/alexstorm/video',
+      'dist/modules/richteri/video',
       'packages/modules/video/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),

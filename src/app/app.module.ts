@@ -19,7 +19,7 @@ import { VideoModule } from "./video.module";
 
 export const PROVIDERS_CONF = [
   {provide: 'tables', useValue: TABLES},
-  {provide: 'assets_dir', useValue: "/fm/modules/alexstorm/video"},
+  {provide: 'assets_dir', useValue: "/fm/modules/richteri/video"},
   {provide: 'mod_name', useValue: "video"}
 ]
 

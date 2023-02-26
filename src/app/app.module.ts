@@ -2,18 +2,18 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {RouterModule, Routes} from '@angular/router';
-import {BootstrapComponent, FuiTemplatesModule, TABLE_PAGE} from "@solenopsys/uimatrix-templates";
+import {BootstrapComponent, FuiTemplatesModule, TABLE_PAGE} from "@solenopsys/ui-templates";
 import {TABLES} from "./tables.config";
 import {CamerasListComponent} from "./cameras-list/cameras-list.component";
 import {FormsModule} from "@angular/forms";
 import {createNgxs} from "@solenopsys/lib-storage";
 import {NgxsModule} from "@ngxs/store";
-import {FuiGridModule} from "@solenopsys/uimatrix-lists";
+import {FuiGridModule} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
-import {VideoStreamComponent} from "@solenopsys/uimatrix-controls";
+import {VideoStreamComponent} from "@solenopsys/ui-controls";
 import {MonacoEditorModule, NgxMonacoEditorConfig} from "ngx-monaco-editor-v2";
 import {environment} from "../environments/environment";
-import { UtilsModule } from "@solenopsys/uimatrix-utils";
+import { UtilsModule } from "@solenopsys/ui-utils";
 import { VideoModule } from "./video.module";
 
 

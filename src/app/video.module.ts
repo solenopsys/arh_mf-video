@@ -3,8 +3,8 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {CamerasListComponent} from './cameras-list/cameras-list.component';
 import {CAMERAS, STREAM_CONFIG} from './tables.config';
-import {VideoStreamComponent} from "@solenopsys/uimatrix-controls";
-import {TABLE_PAGE} from "@solenopsys/uimatrix-templates";
+import {VideoStreamComponent} from "@solenopsys/ui-controls";
+import {TABLE_PAGE} from "@solenopsys/ui-templates";
 
 
 const routes: Routes = [

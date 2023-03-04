@@ -2,19 +2,18 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {RouterModule, Routes} from '@angular/router';
-import {BootstrapComponent, FuiTemplatesModule, TABLE_PAGE} from "@solenopsys/ui-templates";
+import {BootstrapComponent, TABLE_PAGE, UITemplatesModule} from "@solenopsys/ui-templates";
 import {TABLES} from "./tables.config";
 import {CamerasListComponent} from "./cameras-list/cameras-list.component";
 import {FormsModule} from "@angular/forms";
 import {createNgxs} from "@solenopsys/fl-storage";
-import {NgxsModule} from "@ngxs/store";
-import {FuiGridModule} from "@solenopsys/ui-lists";
+import {UIListsModule} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
-import {VideoStreamComponent} from "@solenopsys/ui-controls";
+import {VideoComponent} from "@solenopsys/ui-controls";
 import {MonacoEditorModule, NgxMonacoEditorConfig} from "ngx-monaco-editor-v2";
 import {environment} from "../environments/environment";
-import { UtilsModule } from "@solenopsys/ui-utils";
-import { VideoModule } from "./video.module";
+import {UtilsModule} from "@solenopsys/ui-utils";
+import {VideoModule} from "./video.module";
 
 
 export const PROVIDERS_CONF = [
@@ -35,7 +34,7 @@ export function onMonacoLoad() {
 const routes: Routes = [
   {
     path: 'video', component: CamerasListComponent, children: [
-      {path: ':camera', component: VideoStreamComponent}
+      {path: ':camera', component: VideoComponent}
     ]
   },
   TABLE_PAGE(':table'),
@@ -54,13 +53,14 @@ export const IMPORTS_CONF = [
   BrowserModule,
   RouterModule.forRoot(routes),
   FormsModule,
-  FuiTemplatesModule,
-  ...createNgxs(!environment.production),
+  UITemplatesModule,
+
   MonacoEditorModule.forRoot(monacoConfig),
-  FuiGridModule,
+  UIListsModule,
   VideoModule,
   CommonModule,
-  UtilsModule
+  UtilsModule,
+  ...createNgxs(!environment.production),
 ]
 
 

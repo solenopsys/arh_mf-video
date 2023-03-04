@@ -3,14 +3,14 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {CamerasListComponent} from './cameras-list/cameras-list.component';
 import {CAMERAS, STREAM_CONFIG} from './tables.config';
-import {VideoStreamComponent} from "@solenopsys/ui-controls";
+import {VideoComponent} from "@solenopsys/ui-controls";
 import {TABLE_PAGE} from "@solenopsys/ui-templates";
 
 
 const routes: Routes = [
     {
         path: 'video/video', component: CamerasListComponent, children: [
-            {path: ':camera', component: VideoStreamComponent}
+            {path: ':camera', component: VideoComponent}
         ]
     },
     TABLE_PAGE('video/:table'),

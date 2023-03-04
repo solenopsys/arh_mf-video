@@ -48,7 +48,7 @@ module.exports = {
       name: 'video',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/video/src/app/entry.module.ts',
+        './Module': 'packages/modules/mf-video/src/app/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -104,8 +104,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/video',
-      'packages/modules/video/src/assets/menu.json'
+      'dist/modules/mf-richteri/video',
+      'packages/modules/mf-video/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],

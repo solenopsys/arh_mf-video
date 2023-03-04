@@ -1,24 +1,24 @@
 {
-  "name": "video-invicta",
+  "name": "mf-video",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "packages/modules/video-invicta/src",
+  "sourceRoot": "packages/modules/mf-video/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/modules/video-invicta",
-        "index": "packages/modules/video-invicta/src/index.html",
-        "main": "packages/modules/video-invicta/src/main.ts",
-        "polyfills": "packages/modules/video-invicta/src/polyfills.ts",
-        "tsConfig": "packages/modules/video-invicta/tsconfig.app.json",
+        "outputPath": "dist/modules/mf-video",
+        "index": "packages/modules/mf-video/src/index.html",
+        "main": "packages/modules/mf-video/src/main.ts",
+        "polyfills": "packages/modules/mf-video/src/polyfills.ts",
+        "tsConfig": "packages/modules/mf-video/tsconfig.app.json",
         "assets": [
-          "packages/modules/video-invicta/src/favicon.ico",
-          "packages/modules/video-invicta/src/assets"
+          "packages/modules/mf-video/src/favicon.ico",
+          "packages/modules/mf-video/src/assets"
         ],
-        "styles": ["packages/modules/video-invicta/src/styles.scss"],
+        "styles": ["packages/modules/mf-video/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "packages/modules/video-invicta/src/environments/environment.ts",
-              "with": "packages/modules/video-invicta/src/environments/environment.prod.ts"
+              "replace": "packages/modules/mf-video/src/environments/environment.ts",
+              "with": "packages/modules/mf-video/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "video-invicta:build:production"
+          "browserTarget": "video:build:production"
         },
         "development": {
-          "browserTarget": "video-invicta:build:development"
+          "browserTarget": "video:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,15 +69,15 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "video-invicta:build"
+        "browserTarget": "video:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/modules/video-invicta/**/*.ts",
-          "packages/modules/video-invicta/**/*.html"
+          "packages/modules/mf-video/**/*.ts",
+          "packages/modules/mf-video/**/*.html"
         ]
       }
     },
@@ -85,7 +85,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/modules/video-invicta/jest.config.ts",
+        "jestConfig": "packages/modules/mf-video/jest.config.ts",
         "passWithNoTests": true
       }
     }

@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/sc-fm-video-invicta",
+  "name": "@solenopsys/mf-video",
   "dependencies": {
     "ngx-monaco-editor-v2": "^14.0.4"
   },

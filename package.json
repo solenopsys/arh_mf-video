@@ -1,7 +1,7 @@
 {
   "name": "@solenopsys/mf-video",
   "dependencies": {
-    "ngx-monaco-editor-v2": "^14.0.4"
+    "ngx-monaco-editor-v2": "^15.0.1"
   },
   "version": "0.9.1",
   "scripts": {

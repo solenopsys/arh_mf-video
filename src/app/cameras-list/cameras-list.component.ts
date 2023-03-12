@@ -5,7 +5,7 @@ import {firstValueFrom} from "rxjs";
 @Component({
   selector: 'app-cameras-list',
   templateUrl: './cameras-list.component.html',
-  styleUrls: ['./cameras-list.component.css']
+  styleUrls: ['./cameras-list.component.scss']
 })
 export class CamerasListComponent implements OnInit {
   cameras;

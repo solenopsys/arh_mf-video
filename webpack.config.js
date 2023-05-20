@@ -104,7 +104,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/mf-richteri/video',
+      'dist/modules/mf-video',
       'packages/modules/mf-video/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),

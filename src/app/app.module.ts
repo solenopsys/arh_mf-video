@@ -6,12 +6,10 @@ import {BootstrapComponent, TABLE_PAGE, UITemplatesModule} from "@solenopsys/ui-
 import {TABLES} from "./tables.config";
 import {CamerasListComponent} from "./cameras-list/cameras-list.component";
 import {FormsModule} from "@angular/forms";
-import {createNgxs} from "@solenopsys/fl-storage";
 import {UIListsModule} from "@solenopsys/ui-lists";
 import {CommonModule} from "@angular/common";
 import {VideoComponent} from "@solenopsys/ui-controls";
 import {MonacoEditorModule, NgxMonacoEditorConfig} from "ngx-monaco-editor-v2";
-import {environment} from "../environments/environment";
 import {UtilsModule} from "@solenopsys/ui-utils";
 import {VideoModule} from "./video.module";
 
@@ -60,7 +58,6 @@ export const IMPORTS_CONF = [
   VideoModule,
   CommonModule,
   UtilsModule,
-  ...createNgxs(!environment.production),
 ]
 
 

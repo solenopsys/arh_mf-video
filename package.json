@@ -1,7 +1,7 @@
 {
   "name": "@solenopsys/mf-video",
 
-  "peerDependencies": {
+  "dependencies": {
     "ngx-monaco-editor-v2": "^15.0.0",
     "@solenopsys/ui-templates": "^0.1.0",
     "@solenopsys/fl-storage": "^0.1.0",
